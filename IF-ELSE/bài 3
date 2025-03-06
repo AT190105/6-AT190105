@@ -1,1 +1,13 @@
-
+#include <stdio.h>
+	int main (){
+		long long x;
+		printf("nhap x: ");
+		scanf("%lld",&x);
+	    long long binhphuong=x*x;
+		long long lapphuong=x*x*x;
+		long long tuphuong=x*x*x*x;
+		printf("x*x=%lld",binhphuong);
+		printf("\nx*x*x=%lld",lapphuong);
+		printf("\nx*x*x*x=%lld",tuphuong);
+	    return 0;	  
+		}
