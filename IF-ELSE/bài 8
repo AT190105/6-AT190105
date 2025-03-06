@@ -1,1 +1,60 @@
-
+#include<stdio.h>
+#include<math.h>
+	int main(){
+		float a;
+		printf("nhap a:");
+		scanf("%f",&a);
+		float b;
+		printf("nhap b:");
+		scanf("%f",&b);
+		float c;
+		printf("nhap c:");
+		scanf("%f",&c);
+		float C= a+b+c;
+		float p=(a+b+c)/2;
+		float S=sqrt(p*(p-a)*(p-b)*(p-c));
+		if(((a<=abs(b-c)) || (a>=(b+c))) && ((b<=abs(a-c)) || (b>=(a+c)))&& ((c<=abs(b-a)) || (c>=(b+a)))){
+		
+					printf("khong ton tai tam giac");
+					return 0;
+		}
+		if((a>abs(b-c)) && (a<(b+c))){
+			if((b>abs(a-c)) && (b<(a+c))){
+				if((c>abs(b-c))&& (c<(b+c))){
+				    if((a*a+b*b==c*c)||(c*c+b*b==a*a)||(a*a+c*c==b*b)){
+						printf("tam giac vuong");
+						printf("\nC=%f",C);
+						printf("\nS=%f",S);
+						return 0;
+					}
+				    if((a*a+b*b==c*c && a==b)||(c*c+b*b==a*a && c==b)||(a*a+c*c==b*b && a==c)){
+						printf("tam giac vuong can");
+						printf("\nC=%f",C);
+						printf("\nS=%f",S);
+						return 0;
+					}
+					if((a==b && a!=c)||(c==b && c!=a)||(a==c && a!=b)){
+						printf("tam giac can");
+						printf("\nC=%f",C);
+						printf("\nS=%f",S);
+						return 0;
+					}
+					if(a==b && a==c && b==c){
+						printf("tam giac deu");
+						printf("\nC=%f",C);
+						printf("\nS=%f",S);
+						return 0;
+					}
+					
+			}	
+					
+					
+		}	
+			
+	}
+		printf("tam giac thuong");
+		printf("\nC=%f",C);
+		printf("\nS=%f",S);
+		return 0;
+	
+}
