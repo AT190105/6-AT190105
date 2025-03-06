@@ -1,1 +1,13 @@
-
+#include <stdio.h>
+	int main (){
+		float R;
+	    printf("nhap ban kinh hinh cau:");
+	    scanf("%f",&R);
+		const float pi=3.14;
+		float S=4*pi*R*R;
+		float V=(S*R)/3;
+		printf("dien tich hinh cau = %.3f",S);
+		printf("\nthe tich hinh cau = %.3f",V);
+		return 0;
+	} 
+	
