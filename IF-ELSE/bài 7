@@ -1,1 +1,28 @@
-
+#include<stdio.h>
+	int main(){
+		int diem;
+		printf("nhap diem:");
+		scanf("%d",&diem);
+		if(diem<5 && diem>=0){
+			printf("yeu");
+		}
+		if(diem>=5 && diem<7 ){
+			printf("TB");
+		}
+		if(diem>=7 && diem<8 ){
+			printf("kha");
+		}
+		if(diem>=8 && diem<9 ){
+			printf("gioi");
+		}
+		if(diem>=9 && diem<=10 ){
+			printf("xuat sac");
+		}
+       if(diem<0){
+			printf("khong ton tai");
+		}
+       if(diem>10){
+			printf("khong ton tai");
+		}
+    return 0;
+	} 
