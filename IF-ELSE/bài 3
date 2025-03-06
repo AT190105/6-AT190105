@@ -1,13 +1,23 @@
 #include <stdio.h>
-	int main (){
-		long long x;
-		printf("nhap x: ");
-		scanf("%lld",&x);
-	    long long binhphuong=x*x;
-		long long lapphuong=x*x*x;
-		long long tuphuong=x*x*x*x;
-		printf("x*x=%lld",binhphuong);
-		printf("\nx*x*x=%lld",lapphuong);
-		printf("\nx*x*x*x=%lld",tuphuong);
-	    return 0;	  
+	int main (){ 
+		float x;
+		printf("nhap so nguyen 1: ");
+		scanf("%f",&x);
+		float y;
+		printf("nhap so nguyen 2: ");
+		scanf("%f",&y);
+        float tong=x+y;
+        float hieu=x-y;
+        float tich=x*y;
+        float thuong=x/y;
+		printf("tong=%f",tong);
+		printf("\nhieu=%f",hieu);
+		printf("\ntich=%f",tich);
+		if(y!=0){
+			printf("\nthuong=%f",thuong);	
+		} 
+		if(y==0){
+				printf("\nthuong=vo nghiem");
 		}
+	    return 0;
+	}
