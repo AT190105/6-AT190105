@@ -18,7 +18,7 @@
 			printf("thang %d nam %d co 30 ngay",thang,nam);
 			return 0;	
 		}
-		if(thang==2 && nam%4!=0 && nam%400!=0 ){
+		if(thang==2 && nam%4!=0 || nam%400!=0 ){
 				printf("thang %d nam %d co 28 ngay",thang,nam);	
 		}
 		if(thang==2 && nam%4==0 || nam%400==0){
